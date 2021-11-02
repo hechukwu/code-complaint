@@ -13,6 +13,13 @@
 		4710789E27311ED10023359E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4710789C27311ED10023359E /* Main.storyboard */; };
 		471078A027311ED30023359E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4710789F27311ED30023359E /* Assets.xcassets */; };
 		471078A327311ED30023359E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471078A127311ED30023359E /* LaunchScreen.storyboard */; };
+		47553F7F2731715E005245C6 /* BaseUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47553F7E2731715E005245C6 /* BaseUILabel.swift */; };
+		47553F812731718E005245C6 /* EFontRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47553F802731718E005245C6 /* EFontRegular.swift */; };
+		47553F83273171A9005245C6 /* EFontConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47553F82273171A9005245C6 /* EFontConstant.swift */; };
+		47553F85273171DA005245C6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47553F84273171DA005245C6 /* String+Extension.swift */; };
+		47553F8727317269005245C6 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47553F8627317269005245C6 /* UILabel+Extension.swift */; };
+		47553F8D2731768A005245C6 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 47553F8B2731768A005245C6 /* SFPRODISPLAYBOLD.OTF */; };
+		47553F8E2731768A005245C6 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 47553F8C2731768A005245C6 /* SFPRODISPLAYREGULAR.OTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		4710789F27311ED30023359E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		471078A227311ED30023359E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		471078A427311ED30023359E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47553F7E2731715E005245C6 /* BaseUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUILabel.swift; sourceTree = "<group>"; };
+		47553F802731718E005245C6 /* EFontRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EFontRegular.swift; sourceTree = "<group>"; };
+		47553F82273171A9005245C6 /* EFontConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EFontConstant.swift; sourceTree = "<group>"; };
+		47553F84273171DA005245C6 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		47553F8627317269005245C6 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		47553F8B2731768A005245C6 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
+		47553F8C2731768A005245C6 /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYREGULAR.OTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,9 @@
 		4710789527311ED00023359E /* Code-complaint */ = {
 			isa = PBXGroup;
 			children = (
+				47553F8A27317608005245C6 /* Font */,
+				47553F89273172A6005245C6 /* LabelFont */,
+				47553F882731727A005245C6 /* Extension */,
 				4710789627311ED10023359E /* AppDelegate.swift */,
 				4710789827311ED10023359E /* SceneDelegate.swift */,
 				4710789A27311ED10023359E /* ViewController.swift */,
@@ -65,6 +82,34 @@
 				471078A427311ED30023359E /* Info.plist */,
 			);
 			path = "Code-complaint";
+			sourceTree = "<group>";
+		};
+		47553F882731727A005245C6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				47553F84273171DA005245C6 /* String+Extension.swift */,
+				47553F8627317269005245C6 /* UILabel+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		47553F89273172A6005245C6 /* LabelFont */ = {
+			isa = PBXGroup;
+			children = (
+				47553F82273171A9005245C6 /* EFontConstant.swift */,
+				47553F802731718E005245C6 /* EFontRegular.swift */,
+				47553F7E2731715E005245C6 /* BaseUILabel.swift */,
+			);
+			path = LabelFont;
+			sourceTree = "<group>";
+		};
+		47553F8A27317608005245C6 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				47553F8B2731768A005245C6 /* SFPRODISPLAYBOLD.OTF */,
+				47553F8C2731768A005245C6 /* SFPRODISPLAYREGULAR.OTF */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +170,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47553F8D2731768A005245C6 /* SFPRODISPLAYBOLD.OTF in Resources */,
 				471078A327311ED30023359E /* LaunchScreen.storyboard in Resources */,
 				471078A027311ED30023359E /* Assets.xcassets in Resources */,
+				47553F8E2731768A005245C6 /* SFPRODISPLAYREGULAR.OTF in Resources */,
 				4710789E27311ED10023359E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47553F8727317269005245C6 /* UILabel+Extension.swift in Sources */,
 				4710789B27311ED10023359E /* ViewController.swift in Sources */,
+				47553F85273171DA005245C6 /* String+Extension.swift in Sources */,
+				47553F7F2731715E005245C6 /* BaseUILabel.swift in Sources */,
+				47553F83273171A9005245C6 /* EFontConstant.swift in Sources */,
+				47553F812731718E005245C6 /* EFontRegular.swift in Sources */,
 				4710789727311ED10023359E /* AppDelegate.swift in Sources */,
 				4710789927311ED10023359E /* SceneDelegate.swift in Sources */,
 			);
